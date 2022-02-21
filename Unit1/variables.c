@@ -1,33 +1,25 @@
-#include <stdio.h> //it's just comment
+#include <stdio.h>
 
-//DataType: 
-//Create a variable: dataType anyName; | dataType anyName = 12; //Solo se declara una vez
+//Data type
+//Inter (int), decimales, characters, strings
+//DataType varName: DataType varName = anyValue
+//Definicion y declaracion, ejecucion/llamado
 
-int myInt = 24; //-> text format: %i, %d
-float myFloat = 22.7; //-> text format: %f
-char myChar = 'M'; // -> %c
-int myArray[7] = { 5, 27, 43, 12, 8, 7, 0 };
-                // 0  1   2   3   4  5  6 ...n
-float myFloatArray[255] = {1.33, 2.55, 666.1};                
-char word[3] = {'M', 'A', 'X'};
-char country[10] = "México"; // %s
-char* aName = "Maximiliano";  // %s
+//Declarar y definir un valor inicial
+//Cada tipo de variable tiene un tipo de formato de texto
+int temperature = 30;  // %i, %d
+float pi = 3.1416; // %f
+char initial = 'M'; // %c
+char* name = "Maximiliano"; // %s
+// Otros formatos de texto
+// \n: salto de linea
+// \t: tap
 
-int main(){
+int main (){
+    printf("Temperature: \t%i \nMi nombre es: \t%s \n", temperature, name);
+    //Ejecucion/llamado
+    temperature = 15;
 
-    //Modified ints
-    printf("hola clase, myInt = %d\n", myInt);
-    myInt = 25;
-    printf("hola clase, myInt = %d\n", myInt);
-    int yearsOld = 20;
-    printf("%d\n",yearsOld);
-    printf("%f\n",myFloat);
-    printf("%c\n",myChar);
-    printf("%d\n",myArray[2]);
-    printf("%f\n",myFloatArray[2]);
-    printf("%s\n",word);
-    printf("%s\n",country);
-    printf("%s\n",aName);
-    
+
     return 0;
 }
