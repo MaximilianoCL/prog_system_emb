@@ -4,21 +4,21 @@
 
 int main (int argc, char** argv){
 
-    printf("For running: %s %s \n", argv[0], argv[1]);
+    int counter = 0;
 
-    int number = atoi(argv[1]);
-
-
-    printf("While running: %s %s \n", argv[0], argv[1]);
-
-    int number1 = atoi(argv[1]);
-
-    bool isDivided = number1%2 == 0;
-
-    while (isDivided != 0){
-
-        printf("Numeros impares: %d",isDivided);
+    for (counter = 2 ; counter <= 10; counter += 2){
+        printf ("For running: %d\n", counter);
+    }
+    
+    counter = 1;
+    while (counter <= 5){
+        printf ("While running: %d\n", counter);
+        counter += 2;
     }
 
+    printf("\n");
+    
     return 0;
+ 
+    
 }
