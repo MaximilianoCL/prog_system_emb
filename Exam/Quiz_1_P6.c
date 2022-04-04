@@ -4,7 +4,7 @@ int main (){
 
     int length, width, area;
 
-    printf ("Enter the height of the figure:\n");
+    printf ("Enter the length of the figure:\n");
     scanf("%d", &length);
 
     printf("Enter the width of the figure:\n");
