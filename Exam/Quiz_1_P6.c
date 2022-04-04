@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main (){
+
+    int length, width, area;
+
+    printf ("Enter the height of the figure:\n");
+    scanf("%d", &length);
+
+    printf("Enter the width of the figure:\n");
+    scanf("%d", &width);
+
+    area = length * width;
+
+    printf("The area is: %d \n", area);
+    
+    if (length == width){
+        printf ("The figure is a square \n");
+    }
+    else{
+        printf("The figure is a rectangle\n");
+    }
+
+    return 0;
+}
