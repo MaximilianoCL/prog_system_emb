@@ -11,8 +11,8 @@ int main (int argc, char** argv){
 
     printf("Ingresa tus numeros: %s %s \n",argv[1],argv[2]);
 
-    int number1 = atoi(argv[1]);
-    int number2 = atoi(argv[2]);
+    float number1 = atoi(argv[1]);
+    float number2 = atoi(argv[2]);
 
     int sum = number1 + number2;
     float min = number1 - number2;
